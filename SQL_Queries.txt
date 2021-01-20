@@ -1,0 +1,10 @@
+1.	SELECT COUNT(name) FROM TeamYusuf2021;
+2.	SELECT COUNT(department) FROM TeamYusuf2021 WHERE department IN ('Accounting');
+3.	SELECT COUNT(status) FROM TeamYusuf2021 WHERE status NOT IN ('Activated');
+4.	SELECT * FROM TeamYusuf2021 LIMIT 5;
+5.	SELECT * FROM TeamYusuf2021 WHERE age BETWEEN 19 AND 25;
+6.	SELECT * FROM TeamYusuf2021 WHERE created_dt IN ('02-01-2021');
+7.	SELECT * FROM TeamYusuf2021 WHERE created_dt ='04-01-2021' OR Created_dt ='05-01-2021' OR Created_dt ='06-01-2021';
+8.	UPDATE TeamYusuf2021 SET status='Activated' WHERE status='Pending';
+9.	UPDATE TeamYusuf2021 SET name='Timothy' WHERE name='Tim';
+10.	SELECT department, COUNT(*) FROM TeamYusuf2021 GROUP BY department;
